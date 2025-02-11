@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar Elementos por ID</title>
+    <style>
+        .elemento {
+            padding: 10px;
+            margin: 5px;
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="boton_casa" class="elemento">Botón Casa</div>
+    <div id="boton_coche" class="elemento">Botón Coche</div>
+    <div id="boton_avion" class="elemento">Botón Avión</div>
+    <div id="no_ocultar" class="elemento">No ocultar</div>
+
+    <button onclick="ocultarElementos()">Ocultar botones</button>
+
+    <script>
+        // Función para ocultar elementos cuyo id contiene "boton"
+        function ocultarElementos() {
+            // Seleccionar todos los elementos
+            const elementos = document.querySelectorAll('*');
+            
+            // Expresión regular para buscar IDs que contienen "boton"
+            const regex = /boton/;
+            
+            // Iterar sobre todos los elementos y aplicar display: none si el id coincide con la regex
+            elementos.forEach(elemento => {
+                if (elemento.id && regex.test(elemento.id)) {
+                    elemento.style.display = 'none'; // Ocultar el elemento
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

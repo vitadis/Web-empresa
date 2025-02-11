@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atencion_cliente</title>
+    <link rel="stylesheet" href="css_index/h_b_f.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://ionic.io/ionicons.css">
+    <!--Link libreria iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css_chatbot/chat_bot.css">
+    <link rel="stylesheet" href="css_index/indice.css">
+    <!-- Scripts -->
+    <script src="js_tablet/tablet.js"></script>
+    <script src="js_chatbot/chatbot.js"></script>
+
+</head>
+<body>    
+    <header id="inicio">
+        <div class="encabezado">
+            <!--Indice-->
+            <!-- Botón para abrir el menú -->
+            <button class="menu-btn" onclick="abrirMenu()"></button>
+
+            <script src="jquery-3.7.1.js"></script>
+            <script> 
+            $(function(){
+                $("#side-menu").load("menu.html");
+            });
+            </script> 
+            <div id="side-menu"></div>
+
+            <!--Logo/titulo (centrarlo en css)-->
+            <img src="img/LoupiFullLogoWeb.png" width="200" height="50" />
+            <!--Redes sociales-->
+            <div class="contactos">
+                <div class="iconos_contacto">
+                    <a href="mailto:loupiempresa@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@loupi5048?_t=8pn6XutvG88&_r=1" >
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/loupi.empresa?igsh=cG9jMHVpdjA0c3M1">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Estructura de la tablet -->
+    <div class="container_tablet">
+        <div class="tablet">
+            <div class="pantalla" id="tablet-pantalla">
+                <img src="img/chat_bot.png" class="img_chat_bot">
+                <div class="chat-container">
+                    <div id="chat-box" class="chat-box"></div>
+                    <div class="input-container">
+                        <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                        <button id="send-btn">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="derecha_botones">
+                <button id="btn1"><ion-icon class="tamaño_icons" name="chevron-down-outline"></ion-icon></button> <!--Retroceder-->
+                <button id="btn2" onclick="boton_refresh()"><ion-icon class="tamaño_icons" name="square-outline"></ion-icon></button> <!--Reset-->
+                <button id="btn3"><ion-icon class="tamaño_icons" name="menu-outline"></ion-icon></button><!--No found-->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="pie_de_pagina">
+            <div class="contenedor_pie_pagina">
+                <div class="=logo">
+                    <img src="img/LoupiFullLogoWeb.png" width="150">
+                </div>
+                <!-- Contenido -->
+                <div class="contenido">
+                    <P>Conteremos con una app y un asistente virtual, el cual será para la gestión y control de nuestros dispositivos inteligentes.
+                        En resumen, somos tu mejor opción calidad-precio.
+                    </P>
+                    <div class="contactos">
+                        <div class="iconos_contacto">
+                            <a href="mailto:loupiempresa@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@loupi5048?_t=8pn6XutvG88&_r=1" >
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.instagram.com/loupi.empresa?igsh=cG9jMHVpdjA0c3M1">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_pie_pagina">
+                <h3>Recursos</h3>
+                <p>Estos recursos se utilizaron para la capacitación y creación de la página web.</p>
+                <p><a href="https://lenguajehtml.com/html/">HTML.- </a> Se usó para la estructura de la web.</p>
+                <p><a href="https://lenguajecss.com/css/">CSS.- </a> Se usó para el diseño de la web.</p>
+                <p><a href="https://lenguajejs.com/javascript/">JS.-</a> Se utilizó para la interacción dinámica.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

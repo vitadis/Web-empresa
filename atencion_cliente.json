@@ -1,0 +1,53 @@
+{
+    "saludos": [
+        {
+            "keywords": ["hola", "buenos días", "buenas tardes", "buenas noches"],
+            "response": "¡Hola! ¿Cómo podemos ayudarte hoy?"
+        }
+    ],
+    "preguntas_frecuentes": [
+        {
+            "keywords": ["horarios de atención", "cuándo están disponibles", "cuáles son los horarios"],
+            "response": "Nuestros horarios de atención son de lunes a viernes de 9:00 a 18:00.",
+            "link": "https://www.loupi.com"
+        },
+        {
+            "keywords": ["número de contacto", "teléfono", "cómo contactarlos"],
+            "response": "Puedes contactarnos al +34 600 123 456 o por correo a soporte@empresa.com."
+        },
+        {
+            "keywords": ["dirección", "ubicación", "dónde están"],
+            "response": "Nuestra oficina está ubicada en Calle Ejemplo, 123, Ciudad, País."
+        },
+        {
+            "keywords": ["devoluciones", "cómo hacer una devolución", "quiero devolver un producto"],
+            "response": "Puedes realizar devoluciones dentro de los primeros 30 días después de la compra. Visita nuestra sección de devoluciones en la web."
+        },
+        {
+            "keywords": ["formas de pago", "métodos de pago", "cómo pagar"],
+            "response": "Aceptamos pagos con tarjeta de crédito, débito, PayPal y transferencias bancarias."
+        },
+        {
+            "keywords": ["envíos", "métodos de envío", "tiempos de entrega"],
+            "response": "Realizamos envíos a todo el país con entrega en 2-5 días hábiles."
+        }
+    ],
+    "redes_sociales": [
+        {
+            "keywords": ["cuáles son sus redes sociales", "dónde puedo seguirlos", "cuáles son vuestras redes sociales", "dónde puedo contactarlos"],
+            "response": "Este es nuestro instagram puedes contactarnos desde ahí :)",
+            "link_2": "https://www.instagram.com/loupi.empresa?igsh=cG9jMHVpdjA0c3M1"
+        }
+    ],
+
+    "despedidas": [
+        {
+            "keywords": ["gracias", "muchas gracias", "te agradezco"],
+            "response": "¡Gracias a ti! No dudes en volver si necesitas más asistencia."
+        },
+        {
+            "keywords": ["adiós", "hasta luego", "nos vemos"],
+            "response": "¡Adiós! Que tengas un excelente día."
+        }
+    ]
+}

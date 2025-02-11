@@ -1,0 +1,314 @@
+/*Editar para que no salga dos imagenes en el formulario*/
+/* Estilo del contenedor del formulario */
+.form_caja {
+    background-image: url(../img/fondo_form.jpg);
+    max-width: 100%;
+    width: 95%;
+    margin: 20px auto;
+    padding: 30px; /* Aumentamos el padding para mayor separación interna */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;  
+}
+
+/* Contenedor del título y el formulario */
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Separación entre el título y el formulario */
+}
+
+/* Estilo del encabezado del formulario */
+.form_caja h2 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2rem; /* Tamaño de texto aumentado para mayor prominencia */
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Estilo para cada grupo de campo */
+.campos_form {
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas de los campos */
+.campos_form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Estilo para los campos de entrada */
+.campos_form input,
+.campos_form textarea {
+    width: 100%; /* Siempre ocupará el 100% del contenedor */
+    padding: 10px;
+    border: 1px solid #00000073;
+    border-radius: 4px;
+    background-color: #000000af;
+
+    color: #fff;
+    font-size: 1rem; /* Tamaño de texto relativo */
+    box-sizing: border-box;
+}
+
+/* Estilo del mensaje */
+.campos_form textarea {
+    resize: none; /* Desactiva el redimensionado manual */
+    height: 120px;
+}
+
+/* Estilo del botón de envío */
+.campos_form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0400d4;
+    border: none;
+    color: white;
+    font-size: 1.2rem; /* Tamaño del texto relativo */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Efecto hover en el botón */
+.campos_form button:hover {
+    background-color: #4b86ddb2;
+}
+
+.form_caja {
+        max-width: 800px;
+}
+
+/*Este estilo se apica a todos*/
+h2, p {
+    border-radius:25px;
+    padding: 10px;
+}
+
+/*Esto se usara en el caso de que se tenga imagen, titulo ytexto.*/
+.contenedor1 {
+    width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,0.13fr);
+}
+.imagen1 {
+    width: 350px;
+    grid-column: 1/7;
+    grid-row: 1/7;
+    border-radius: 30px;
+}
+
+.texto1 {
+    background-color: rgba(17, 0, 255, 0.158);
+    color:rgb(255, 255, 255);
+    grid-column: 4/9;
+    grid-row: 3/7;
+}
+
+.parrafo2 , .titulo2{
+    display: grid;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+/*Estilo aplicable a texto e imagen*/
+.contenedor_ti {
+    width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(10,0.1fr);
+    border-radius: 25px;
+}
+
+.img_ti {
+    width: 500px;
+    height: 350px;
+    border:0;
+    grid-column: 8/17;
+    grid-row: 1/10;
+    border-radius: 30px;
+}
+
+.titulo_ti {
+    background-color: rgba(17, 0, 255, 0.158);
+    grid-column: 1/9;
+    grid-row: 4/8;
+    font-size: 2.5rem;
+    padding: 13px 0;
+    border-radius: 25px;
+}
+
+/*Estilo topo*/
+.contenedor_topo {
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(10,0.1fr);
+    border-radius: 25px;
+}
+
+.img_topo {
+    width: 800px;
+    height: 500px;
+    grid-column: 6/17;
+    grid-row: 1/11;
+    border-radius: 30px;
+}
+
+.titulo_topo {
+    text-align: center;
+    background-color: rgba(17, 0, 255, 0.158);
+    grid-column: 1/9;
+    grid-row: 4/8;
+    font-size: 3px;
+    padding: 13px 0;
+    border-radius: 25px;
+}
+
+/*Perfiles de trabajadores*/
+.contenedor_pp {
+    width: 800px;
+    height: 350px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 255, 0.164);
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,0.1fr);
+    border-radius: 25px;
+}
+
+.titulo_pp {
+    grid-column:  1/21;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.perfil_aitor {
+    grid-column:  2/6;
+    grid-row: 3/5;
+}
+
+.perfil_joel {
+    grid-column: 7/11;
+    grid-row: 3/5;
+}
+
+.perfil_alvaro {
+    grid-column: 12/16;
+    grid-row: 3/5;
+}
+.perfil_deiene {
+    grid-column: 17/20;
+    grid-row: 3/5;
+}
+
+.info_joel {
+    grid-column: 7/11;
+    grid-row: 12/21;
+}
+
+.info_aitor {
+    grid-column:  2/6;
+    grid-row: 12/21;
+}
+
+.info_alvaro {
+    grid-column: 12/16;
+    grid-row: 12/21;
+}
+.info_deiene {
+    grid-column: 17/20;
+    grid-row: 12/21;
+}
+.contenido_menu {
+    background-color: rgba(240, 240, 240, 0.171);
+    border-radius: 10px;
+}
+/*Perfiles de trabajadores*/
+h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Estilo para el párrafo */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px; /* Espacio entre el párrafo y la imagen */
+    text-align: left;
+}
+
+/* Estilo para la imagen en general */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+
+/* Contenedor que envuelve la imagen principal y las redes sociales */
+.contenedor-imagen {
+    position: relative; /* Posiciona los elementos relativos al contenedor */
+    display: inline-block;
+}
+
+/* Estilo de la imagen principal */
+.imagen-principal {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+/* Cuando el ratón pasa sobre la imagen principal, aplicar zoom */
+.contenedor-imagen:hover .imagen-principal {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}
+
+/* Contenedor de las redes sociales, inicialmente oculto */
+.redes-sociales{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    opacity: 0;
+}
+
+
+/* Mostrar las redes sociales al pasar el ratón sobre el contenedor */
+.contenedor-imagen:hover .redes-sociales {
+    opacity: 1; /* Hace que los iconos aparezcan */
+}
+
+/* Estilo para los iconos de las redes sociales */
+.redes-sociales i {
+    font-size: 2rem;
+}
+
+/*info_empreados*/
+
+.boton_info {
+    background-color: #1f1f1f00;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    margin-right: 95px;
+
+}

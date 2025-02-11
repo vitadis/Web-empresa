@@ -1,0 +1,54 @@
+- Cosas nuevas que se agrego.
+    NONE.- Este se usa para bloquear una funcion de css.
+    Encabezado
+        - Se agrego position: sticky; agregando un px de top, esto nos ayuda a que nuestro contenido se mantenga statico mientras escroleamos.
+        - La razón por la que no se uso fixed es que esta tenia algunos bugs.
+
+        - Logos.- Para estos simplemente use una libreria, en la cual segun la clase que otorgue a mi logo me dara el diseño de mail, tiktok entre otros, por ejemplo la clase "fas" hace relacion a las redes sociales y "fa-redsocial" segun el logo de la que sea en mi caso para mail que es "fa-envelope".
+
+        -En este caso para centrar el contenido utilice "display: flex;justify-content: space-between; align-items: center;"
+
+    Indice desplegable
+        - Para su icono agrege ::before para crear un subelemento en el codigo "content: "\22EE";" dentro de css y dentro del mismo defini su tamaño con font-size.
+
+        - Para el desplegable para que ocupe todo el alto le aplique height del 100% y configuraciones basicas como el fondo-background, "transition: left 0.5s ease" para que al aparecer sea mas fluido.
+
+        -Agregamos funciones de js con el comando script en mi caso lo exporte de un archivo externo.
+
+        -Se uso onclick para que la funcion se aplique cuando hagamos un click en el elemento.
+
+        abrirMenu()
+            const menu_ancho = document.getElementById("menu").offsetWidth; --> Aqui creo una donde le damos el id del menu y este nos devuelve el ancho del elemento 
+
+            document.getElementById("menu").style.left = "0"; --> Con esto lo que decimos es que el lado izq sea de 0.
+
+            document.getElementById("contenido").style.marginLeft = menu_ancho + "px"; --> Para que el contenido de nuestro contenido sea acorde del ancho de nuestro menu simplemente le otorgamos el mismo ancho del menu.
+        
+        cerrarMenu()
+            document.getElementById("menu").style.left = "-300px"; --> para esto tenemos en cuenta el ancho del contenido y simplemente lo que hacemos es restarlo en mi caso es 300px asi que seria -300px
+            
+            document.getElementById("contenido").style.marginLeft = "0"; -->Hago que el estilo del margen izquierdo sea 0
+        
+        Sublista() 
+            var sublista = document.getElementById("sublista"); --> En esta var le otorgo el id de mi sublista.
+            if (sublista.style.display === "none" || sublista.style.display === "") { --> Ahora creo una condicional si la sublista no es visible o la sublista no tenga display.
+            sublista.style.display = "block"; --> Muestra la sublista
+            } else {
+            sublista.style.display = "none"; --> de lo contrario la oculta con none.
+            }
+
+    Contenido
+        - Para este usamos grid para tener un mejor direccionamiento de nuestro contenido.
+
+        - Se agregaron otros funciones como "border-radius" que nos ayuda para que el borde no este tan cuadrado, "margin: 20px auto;" que este nos ayuda a centrar el contenido.
+        
+        -Respecto a la ubicacion de google maps, dentro de esta app hay una funcion la cual nos permite compartir en html nuestra ubicacion para usarlo en la web.
+
+    Pie de pagina
+        - Este tiene informacion de la empresa, material para desarrollar la web y un indice cutre.
+    
+    Archivos no oficiales.
+        - filtro-con_js
+            -Estamos propando funciones de js con las cuales pueda filtrar informacion y contenido.
+        -tablet
+            -Este esta en desarrollo pero en principio este tendra una app interactiva la cual te mostrara las innovaciones.

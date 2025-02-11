@@ -1,0 +1,48 @@
+.menu-btn::before {
+    content: "\22EE"; /* Código del icono ⋮ */
+    font-size: 40px;
+}
+.menu-desplegable {
+    height: 100%;
+    width: 300px; /* Tamaño inicial fijo */
+    position: fixed;
+    left: -300px; /* Inicia oculto fuera de la pantalla */
+    background-color: #001aff2d;
+    transition: left 0.5s ease;
+    padding-top: 40px;
+    color: white;
+}
+
+/* Estilos de los enlaces del menú */
+.menu-desplegable a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    background: none;
+}
+
+/* Estilo del botón de apertura del menú */
+.menu-btn {
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: none;
+    position: absolute;
+}
+
+/*letras mas pequeñas de subindices*/
+.sublista li{
+    font-size: 15px ! important;
+}
+
+.menu-desplegable a:hover {
+    background-color: rgba(0, 162, 255, 0.24);
+}

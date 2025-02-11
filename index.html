@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_index/h_b_f.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>loupi</title>
+    <link rel="stylesheet" href="css_index/grid.css">
+</head>
+<body>
+
+    <header id="inicio">
+        <div class="encabezado">
+            <!--Indice-->
+            <!-- Botón para abrir el menú -->
+            <button class="menu-btn" onclick="abrirMenu()"></button>
+
+            <script src="jquery-3.7.1.js"></script>
+            <script> 
+            $(function(){
+            $("#side-menu").load("menu.html");
+            });
+            </script> 
+            <div id="side-menu"></div>
+
+            <!--Logo/titulo (centrarlo en css)-->
+            <img src="img/LoupiFullLogoWeb.png" width="200" height="50" />
+            <!--Redes sociales-->
+            <div class="contactos">
+                <div class="iconos_contacto">
+                    <a href="mailto:loupiempresa@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@loupi5048?_t=8pn6XutvG88&_r=1" >
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/loupi.empresa?igsh=cG9jMHVpdjA0c3M1">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="fondo_img">
+        <div class="form_caja">
+            <!-- Contenedor del título y el formulario -->
+            <div class="titulo" id="formulario">
+                <h2>Desarrollo de dispositivos inteligentes para el hogar</h2>
+            </div>
+        
+            <!-- Formulario -->
+            <form>
+                <div class="campos_form">
+                    <label for="nombre"><b>Nombre:</b></label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+                    <br>
+                    <br>
+                    <label for="apellido"><b>Apellido:</b></label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Ingresa tu apellido">
+                    <br>
+                    <br>
+                    <label for="email"><b>Correo Electrónico:</b></label>
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+                    <br>
+                    <br>
+                    <label for="telefono"><b>Teléfono:</b></label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ingresa tu número de teléfono">
+                    <br>
+                    <br>
+                    <label for="mensaje"><b>Mensaje:</b></label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Dinos cómo podemos ayudarte"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        <div class="contenedor1" id="quienes_somos">
+            <!-- Div para el H2 en el lado izquierdo -->
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=m86RDzWoZ-A5sa-n" class="imagen1"><img class="imagen1"src="img/img_1.jpg" alt="Imagen de ejemplo"></a>
+            <div class="texto1">
+                <h2 class="titulo1">¿Quiénes somos?</h2>
+                <p class="parrafo1">
+                    Nosotros somos unos jóvenes emprendedores que buscan conseguir acercar la domótica a todo el mundo, 
+                    nacimos de la necesidad de una forma cómoda y rápida de domótica los hogares a un precio asequible 
+                    para todos los usuarios.
+                </p>
+            </div>
+        </div>
+        
+        <div class="contenedor_pp" id="equipo">
+            <h2 class="titulo_pp">¿Quiénes conforman nuestro equipo?</h2>
+                <!--perfil aitor-->
+                <div class="perfil_aitor">
+                    <div class="contenedor-imagen">
+                        <img src="img/persona.jpg"  class="imagen-principal">
+                        <div class="redes-sociales">
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:pon un mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil_joel">
+                    <div class="contenedor-imagen">
+                        <img src="img/persona.jpg"  class="imagen-principal">
+                        <div class="redes-sociales">
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:pon un mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil_alvaro">
+                    <div class="contenedor-imagen">
+                        <img src="img/persona.jpg"  class="imagen-principal">
+                        <div class="redes-sociales">
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:pon un mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="perfil_deiene">
+                    <div class="contenedor-imagen">
+                        <img src="img/persona.jpg"  class="imagen-principal">
+                        <div class="redes-sociales">
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:pon un mail" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_caja info_joel">
+                    <button class="boton_info">Joel.-</button>
+                    <div class="contenido_menu">
+                        <p>Pagina web y administración de DB.</p>
+                    </div>
+                </div>
+                <div class="menu_caja info_aitor">
+                    <button class="boton_info">Aitor.-</button>
+                    <div class="contenido_menu">
+                        <p>Administrador de servidores y montaje de dispositivos inteligentes.</p>
+                    </div>
+                </div>
+                <div class="menu_caja info_alvaro">
+                    <button class="boton_info">Alvaro.-</button>
+                    <div class="contenido_menu">
+                        <p>Marketing y publicidad.</p>
+                    </div>
+                </div>
+                <div class="menu_caja info_deiene">
+                    <button class="boton_info">Deiene.-</button>
+                    <div class="contenido_menu">
+                        <p>Innovación.</p>
+                    </div>
+                </div>
+        </div>
+        <div class="contenedor1" id="mejor_compe">
+            <img class="imagen1" src="img_loupi/holo_loupi.png">
+            <div class="texto1">
+                <h2 class="titulo2">¿Por qué somos mejor que la competencia?</h2>
+                <p class="parrafo2">
+                    Otras marcas ofrecen o los dispositivos domóticos
+                    o los controladores para los mismos, nosotros ofrecemos
+                    la comodidad de que no tengas que comprar por separado
+                    y que no tengas que configurar nada, ya que hacemos todo
+                    por ti.
+                </p>
+            </div>
+        </div>
+
+        <div class="contenedor_ti" id="donde_instalaciones">
+            <iframe class="img_ti" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.872477106218!2d-2.9328567624057618!3d43.26623319999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fdab719e7ed%3A0x1306264243028913!2sBilbao%20Lab%20Coworking!5e1!3m2!1ses!2ses!4v1727249972816!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            <div class="titulo_ti">
+                <h2>¿Dónde se encuentran nuestras instalaciones?</h2>
+            </div>
+        </div>
+        <div class="contenedor_topo" id="topo">
+            <img class="img_topo" src="img/topologia.png">
+            <div class="titulo_topo"> 
+                <h2>Topologia</h2>
+                <p>Esta de tipo estrella y cuenta con 2 vlan los cuales facilitan la comunicacion entre distintos departamentos.</p>
+            </div>
+        </div>
+        <!--pie de pagina-->
+    <footer>
+        <div class="pie_de_pagina">
+            <div class="contenedor_pie_pagina">
+                <div class="=logo">
+                    <img src="img/LoupiFullLogoWeb.png" width="150" height="150">
+                </div>
+                <!--Agregar mas de 200 palabras "relleno"-->
+                <div class="contenido">
+                    <P>Conteremos con una app y un asistente virtual, el cual será para la gestión y control de nuestros dispositivos inteligentes.
+                        En resumen somo tu mejor opción calidad precio.
+                    </P>
+                    <div class="contactos">
+                        <div class="iconos_contacto">
+                            <a href="mailto:loupiempresa@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@loupi5048?_t=8pn6XutvG88&_r=1" >
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.instagram.com/loupi.empresa?igsh=cG9jMHVpdjA0c3M1">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_pie_pagina">
+                <h3>Recursos</h3>
+                <p>Estos recursos se utilizo para la capacitación para la creación pagina web</p>
+                <p><a href="https://lenguajehtml.com/html/">HTML.- </a>Este se uso para la creación de la estructura de la web.</p>
+                <p><a href="https://lenguajecss.com/css/">CSS.- </a>Este se uso para el diseño de la web.</p>
+                <p><a href="https://lenguajejs.com/javascript/">JS.-</a>Este se utilizo para la interacción dinámica</p>
+            </div>
+            <div class="contenedor_pie_pagina enlaces_pie">
+                <h3>Contenido</h3>>
+                <a href="#inicio">Inicio</a>
+                <br>
+                <a href="#formulario">Formulario</a>
+                <br>
+                <a href="#quienes_somos">¿Quiénes somos?</a>
+                <br>
+                <a href="#equipo">¿Quiénes conforman nuestro equipo?</a>
+                <br>
+                <a href="#mejor_compe">¿Por qué somos mejor que la competencia?</a>
+                <br>
+                <a href="#donde_instalaciones">¿Dónde se encuentran nuestras instalaciones?</a>
+                <br>
+                <a href="#topo">Topologia</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
